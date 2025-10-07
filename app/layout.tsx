@@ -15,7 +15,7 @@ const inter = Inter({
   subsets: ["latin"],
   variable: "--font-inter",
 })
-
+//comment
 export const metadata: Metadata = {
   title: "Plano Secuencia - Cursos de Cine Online",
   description:
