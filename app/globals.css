@@ -1,0 +1,180 @@
+@import "tailwindcss";
+@import "tw-animate-css";
+
+@custom-variant dark (&:is(.dark *));
+
+:root {
+  /* Updated to Plano Secuencia film theme with warm amber as primary accent */
+  --background: #121212; /* Carbon black */
+  --foreground: #f9f9f9; /* Bone white */
+  --card: #1a1a1a; /* Slightly lighter black for cards */
+  --card-foreground: #f9f9f9;
+  --popover: #1a1a1a;
+  --popover-foreground: #f9f9f9;
+  /* Changed secondary from deep red to fuchsia/violet */
+  --primary: #f6c177; /* Warm amber - main accent */
+  --primary-foreground: #121212;
+  --secondary: #c74b9f; /* Fuchsia/violet - secondary accent */
+  --secondary-foreground: #f9f9f9;
+  --muted: #2a2a2a;
+  --muted-foreground: #e0e0e0; /* Smoke gray */
+  --accent: #f6c177; /* Warm amber */
+  --accent-foreground: #121212;
+  --destructive: #c74b9f;
+  --destructive-foreground: #f9f9f9;
+  --border: #333333;
+  --input: #2a2a2a;
+  --ring: #f6c177;
+  /* Updated chart-2 to fuchsia */
+  --chart-1: #f6c177;
+  --chart-2: #c74b9f;
+  --chart-3: #e0e0e0;
+  --chart-4: #666666;
+  --chart-5: #999999;
+  --radius: 0.5rem;
+  --sidebar: #1a1a1a;
+  --sidebar-foreground: #f9f9f9;
+  --sidebar-primary: #f6c177;
+  --sidebar-primary-foreground: #121212;
+  --sidebar-accent: #2a2a2a;
+  --sidebar-accent-foreground: #f9f9f9;
+  --sidebar-border: #333333;
+  --sidebar-ring: #f6c177;
+  --font-cormorant-garamond: "Cormorant Garamond", serif;
+  --font-inter: "Inter", sans-serif;
+  --font-geist-mono: "Geist Mono", monospace;
+}
+
+.dark {
+  --background: #121212;
+  --foreground: #f9f9f9;
+  --card: #1a1a1a;
+  --card-foreground: #f9f9f9;
+  --popover: #1a1a1a;
+  --popover-foreground: #f9f9f9;
+  /* Changed secondary from deep red to fuchsia/violet in dark mode */
+  --primary: #f6c177;
+  --primary-foreground: #121212;
+  --secondary: #c74b9f;
+  --secondary-foreground: #f9f9f9;
+  --muted: #2a2a2a;
+  --muted-foreground: #e0e0e0;
+  --accent: #f6c177;
+  --accent-foreground: #121212;
+  --destructive: #c74b9f;
+  --destructive-foreground: #f9f9f9;
+  --border: #333333;
+  --input: #2a2a2a;
+  --ring: #f6c177;
+  /* Updated chart-2 to fuchsia in dark mode */
+  --chart-1: #f6c177;
+  --chart-2: #c74b9f;
+  --chart-3: #e0e0e0;
+  --chart-4: #666666;
+  --chart-5: #999999;
+  --sidebar: #1a1a1a;
+  --sidebar-foreground: #f9f9f9;
+  --sidebar-primary: #f6c177;
+  --sidebar-primary-foreground: #121212;
+  --sidebar-accent: #2a2a2a;
+  --sidebar-accent-foreground: #f9f9f9;
+  --sidebar-border: #333333;
+  --sidebar-ring: #f6c177;
+}
+
+@theme inline {
+  /* Fixed font variables to match layout.tsx */
+  --font-serif: var(--font-cormorant-garamond);
+  --font-sans: var(--font-inter);
+  --font-mono: var(--font-geist-mono);
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+  --color-popover: var(--popover);
+  --color-popover-foreground: var(--popover-foreground);
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-secondary: var(--secondary);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-destructive: var(--destructive);
+  --color-destructive-foreground: var(--destructive-foreground);
+  --color-border: var(--border);
+  --color-input: var(--input);
+  --color-ring: var(--ring);
+  --color-chart-1: var(--chart-1);
+  --color-chart-2: var(--chart-2);
+  --color-chart-3: var(--chart-3);
+  --color-chart-4: var(--chart-4);
+  --color-chart-5: var(--chart-5);
+  --radius-sm: calc(var(--radius) - 4px);
+  --radius-md: calc(var(--radius) - 2px);
+  --radius-lg: var(--radius);
+  --radius-xl: calc(var(--radius) + 4px);
+  --color-sidebar: var(--sidebar);
+  --color-sidebar-foreground: var(--sidebar-foreground);
+  --color-sidebar-primary: var(--sidebar-primary);
+  --color-sidebar-primary-foreground: var(--sidebar-primary-foreground);
+  --color-sidebar-accent: var(--sidebar-accent);
+  --color-sidebar-accent-foreground: var(--sidebar-accent-foreground);
+  --color-sidebar-border: var(--sidebar-border);
+  --color-sidebar-ring: var(--sidebar-ring);
+}
+
+@layer base {
+  * {
+    @apply border-border outline-ring/50;
+  }
+  body {
+    @apply bg-background text-foreground;
+  }
+
+  /* Added cursor pointer to all interactive elements */
+  button,
+  a,
+  [role="button"],
+  input[type="submit"],
+  input[type="button"] {
+    cursor: pointer;
+  }
+
+  /* Added film grain texture and custom styles */
+  .film-grain {
+    position: relative;
+  }
+
+  .film-grain::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: radial-gradient(
+        circle at 20% 50%,
+        transparent 20%,
+        rgba(255, 255, 255, 0.02) 21%,
+        rgba(255, 255, 255, 0.02) 34%,
+        transparent 35%,
+        transparent
+      ),
+      linear-gradient(
+        0deg,
+        transparent 24%,
+        rgba(255, 255, 255, 0.01) 25%,
+        rgba(255, 255, 255, 0.01) 26%,
+        transparent 27%,
+        transparent 74%,
+        rgba(255, 255, 255, 0.01) 75%,
+        rgba(255, 255, 255, 0.01) 76%,
+        transparent 77%,
+        transparent
+      );
+    pointer-events: none;
+    opacity: 0.3;
+  }
+}
