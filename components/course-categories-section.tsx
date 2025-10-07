@@ -6,7 +6,7 @@ export function CourseCategoriesSection() {
   return (
     <section id="categorias" className="py-20 px-4 bg-card">
       <div className="max-w-6xl mx-auto">
-        <h2 className="font-serif text-4xl md:text-5xl font-bold text-center mb-16 text-balance">
+        <h2 className="font-dream-avenue text-4xl md:text-5xl text-center mb-16 text-balance">
           Categorías de cursos
         </h2>
 

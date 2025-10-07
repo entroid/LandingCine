@@ -2,7 +2,7 @@ export function HowItWorksSection() {
   return (
     <section id="como-funciona" className="py-20 px-4 bg-card">
       <div className="max-w-6xl mx-auto">
-        <h2 className="font-serif text-4xl md:text-5xl font-bold text-center mb-16 text-balance">Cómo funciona</h2>
+        <h2 className="font-dream-avenue text-4xl md:text-5xl text-center mb-16 text-balance">Cómo funciona</h2>
 
         <div className="grid md:grid-cols-3 gap-8">
           <div className="text-center group">

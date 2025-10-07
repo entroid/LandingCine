@@ -5,7 +5,7 @@ export function ValuePropositionSection() {
     <section className="py-20 px-4">
       <div className="max-w-6xl mx-auto">
         <div className="text-center mb-16">
-          <h2 className="font-serif text-4xl md:text-5xl font-bold mb-6 text-balance">
+          <h2 className="font-dream-avenue text-4xl md:text-5xl mb-6 text-balance">
             Una escuela de cine alternativa
           </h2>
           <p className="text-lg text-muted-foreground max-w-4xl mx-auto text-pretty">

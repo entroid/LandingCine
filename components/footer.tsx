@@ -4,7 +4,11 @@ export function Footer() {
       <div className="max-w-6xl mx-auto">
         <div className="grid md:grid-cols-4 gap-8 mb-8">
           <div>
-            <h3 className="font-serif text-2xl font-bold mb-4">Plano Secuencia</h3>
+            <img 
+              src="/Foco.svg" 
+              alt="Plano Secuencia" 
+              className="h-8 w-auto mb-4"
+            />
             <p className="text-sm text-muted-foreground text-pretty">
               La escuela de cine alternativa para críticos, estudiantes y cinéfilos.
             </p>

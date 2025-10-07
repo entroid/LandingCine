@@ -12,7 +12,7 @@ export function FinalCTASection() {
         <div className="absolute inset-0 bg-gradient-to-r from-background/95 via-background/90 to-background/95" />
       </div>
       <div className="relative z-10 max-w-4xl mx-auto text-center">
-        <h2 className="font-serif text-4xl md:text-6xl font-bold mb-6 text-balance">El cine te está esperando</h2>
+        <h2 className="font-dream-avenue text-4xl md:text-6xl mb-6 text-balance">El cine te está esperando</h2>
         <p className="text-xl text-muted-foreground mb-12 text-pretty">
           No se trata solo de ver películas. Se trata de entenderlas, de desarmarlas, de crear las tuyas propias.
           Comienza tu viaje cinematográfico hoy.

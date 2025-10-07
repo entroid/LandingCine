@@ -11,23 +11,23 @@
   --card-foreground: #f9f9f9;
   --popover: #1a1a1a;
   --popover-foreground: #f9f9f9;
-  /* Changed secondary from deep red to fuchsia/violet */
+  /* Changed secondary to match primary accent */
   --primary: #f6c177; /* Warm amber - main accent */
   --primary-foreground: #121212;
-  --secondary: #c74b9f; /* Fuchsia/violet - secondary accent */
-  --secondary-foreground: #f9f9f9;
+  --secondary: #f6c177; /* Warm amber - same as primary */
+  --secondary-foreground: #121212;
   --muted: #2a2a2a;
   --muted-foreground: #e0e0e0; /* Smoke gray */
   --accent: #f6c177; /* Warm amber */
   --accent-foreground: #121212;
-  --destructive: #c74b9f;
-  --destructive-foreground: #f9f9f9;
+  --destructive: #f6c177;
+  --destructive-foreground: #121212;
   --border: #333333;
   --input: #2a2a2a;
   --ring: #f6c177;
-  /* Updated chart-2 to fuchsia */
+  /* Updated chart-2 to match primary */
   --chart-1: #f6c177;
-  --chart-2: #c74b9f;
+  --chart-2: #f6c177;
   --chart-3: #e0e0e0;
   --chart-4: #666666;
   --chart-5: #999999;
@@ -41,6 +41,7 @@
   --sidebar-border: #333333;
   --sidebar-ring: #f6c177;
   --font-cormorant-garamond: "Cormorant Garamond", serif;
+  --font-playfair-display: "Playfair Display", serif;
   --font-inter: "Inter", sans-serif;
   --font-geist-mono: "Geist Mono", monospace;
 }
@@ -52,23 +53,23 @@
   --card-foreground: #f9f9f9;
   --popover: #1a1a1a;
   --popover-foreground: #f9f9f9;
-  /* Changed secondary from deep red to fuchsia/violet in dark mode */
+  /* Changed secondary to match primary accent in dark mode */
   --primary: #f6c177;
   --primary-foreground: #121212;
-  --secondary: #c74b9f;
-  --secondary-foreground: #f9f9f9;
+  --secondary: #f6c177;
+  --secondary-foreground: #121212;
   --muted: #2a2a2a;
   --muted-foreground: #e0e0e0;
   --accent: #f6c177;
   --accent-foreground: #121212;
-  --destructive: #c74b9f;
-  --destructive-foreground: #f9f9f9;
+  --destructive: #f6c177;
+  --destructive-foreground: #121212;
   --border: #333333;
   --input: #2a2a2a;
   --ring: #f6c177;
-  /* Updated chart-2 to fuchsia in dark mode */
+  /* Updated chart-2 to match primary in dark mode */
   --chart-1: #f6c177;
-  --chart-2: #c74b9f;
+  --chart-2: #f6c177;
   --chart-3: #e0e0e0;
   --chart-4: #666666;
   --chart-5: #999999;
@@ -85,6 +86,7 @@
 @theme inline {
   /* Fixed font variables to match layout.tsx */
   --font-serif: var(--font-cormorant-garamond);
+  --font-display: var(--font-playfair-display);
   --font-sans: var(--font-inter);
   --font-mono: var(--font-geist-mono);
   --color-background: var(--background);
@@ -140,6 +142,13 @@
   input[type="submit"],
   input[type="button"] {
     cursor: pointer;
+  }
+
+  /* Custom typography for titles */
+  .font-dream-avenue {
+    font-family: var(--font-playfair-display);
+    font-weight: 600;
+    letter-spacing: 0em;
   }
 
   /* Added film grain texture and custom styles */
