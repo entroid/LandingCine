@@ -1,12 +1,11 @@
 import { Button } from "@/components/ui/button"
 import { Card, CardContent } from "@/components/ui/card"
-import { Camera, Film, Headphones, PenTool } from "lucide-react"
 
 export function CourseCategoriesSection() {
   return (
     <section id="categorias" className="py-20 px-4 bg-card">
       <div className="max-w-6xl mx-auto">
-        <h2 className="font-dream-avenue text-4xl md:text-5xl text-center mb-16 text-balance">
+        <h2 className="font-dream-avenue text-5xl md:text-6xl text-center mb-16 text-balance">
           Categorías de cursos
         </h2>
 
@@ -20,9 +19,6 @@ export function CourseCategoriesSection() {
                   className="w-full h-full object-cover"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-background/80 to-transparent" />
-                <div className="absolute bottom-4 left-4">
-                  <Camera className="w-8 h-8 text-primary mb-2" />
-                </div>
               </div>
               <div className="p-6">
                 <h3 className="font-serif text-xl font-semibold mb-2">Análisis y Crítica</h3>
@@ -41,9 +37,6 @@ export function CourseCategoriesSection() {
                   className="w-full h-full object-cover"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-background/80 to-transparent" />
-                <div className="absolute bottom-4 left-4">
-                  <Film className="w-8 h-8 text-secondary mb-2" />
-                </div>
               </div>
               <div className="p-6">
                 <h3 className="font-serif text-xl font-semibold mb-2">Dirección y Rodaje</h3>
@@ -62,9 +55,6 @@ export function CourseCategoriesSection() {
                   className="w-full h-full object-cover"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-background/80 to-transparent" />
-                <div className="absolute bottom-4 left-4">
-                  <Headphones className="w-8 h-8 text-accent mb-2" />
-                </div>
               </div>
               <div className="p-6">
                 <h3 className="font-serif text-xl font-semibold mb-2">Montaje y Sonido</h3>
@@ -83,9 +73,6 @@ export function CourseCategoriesSection() {
                   className="w-full h-full object-cover"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-background/80 to-transparent" />
-                <div className="absolute bottom-4 left-4">
-                  <PenTool className="w-8 h-8 text-primary mb-2" />
-                </div>
               </div>
               <div className="p-6">
                 <h3 className="font-serif text-xl font-semibold mb-2">Guion y Narrativa</h3>
@@ -100,7 +87,7 @@ export function CourseCategoriesSection() {
           <Button
             variant="outline"
             size="lg"
-            className="border-secondary text-secondary hover:bg-secondary hover:text-secondary-foreground bg-transparent"
+            className="border-secondary text-secondary hover:bg-secondary hover:text-secondary-foreground bg-transparent py-6"
           >
             Ver todos los cursos
           </Button>

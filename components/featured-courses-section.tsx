@@ -6,7 +6,7 @@ export function FeaturedCoursesSection() {
   return (
     <section id="cursos" className="py-20 px-4">
       <div className="max-w-6xl mx-auto">
-        <h2 className="font-dream-avenue text-4xl md:text-5xl text-center mb-16 text-balance">Cursos destacados</h2>
+        <h2 className="font-dream-avenue text-5xl md:text-6xl text-center mb-16 text-balance">Cursos destacados</h2>
 
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
           <Card className="bg-gradient-to-br from-primary/20 to-primary/5 border-primary/20 hover:border-primary/40 transition-colors group overflow-hidden">
@@ -23,7 +23,7 @@ export function FeaturedCoursesSection() {
                 <h3 className="font-serif text-lg font-semibold mb-4 text-balance">
                   La poesía de Tarkovski: tiempo y memoria en pantalla
                 </h3>
-                <Button size="sm" className="w-full bg-primary hover:bg-primary/90">
+                <Button size="sm" className="w-full bg-primary hover:bg-primary/90 py-3">
                   Ver curso
                 </Button>
               </div>
@@ -44,7 +44,7 @@ export function FeaturedCoursesSection() {
                 <h3 className="font-serif text-lg font-semibold mb-4 text-balance">
                   El viaje del antihéroe: guion en el cine contemporáneo
                 </h3>
-                <Button size="sm" className="w-full bg-primary hover:bg-primary/90">
+                <Button size="sm" className="w-full bg-primary hover:bg-primary/90 py-3">
                   Ver curso
                 </Button>
               </div>
@@ -65,7 +65,7 @@ export function FeaturedCoursesSection() {
                 <h3 className="font-serif text-lg font-semibold mb-4 text-balance">
                   Montaje cinematográfico: el ritmo invisible
                 </h3>
-                <Button size="sm" className="w-full bg-primary hover:bg-primary/90">
+                <Button size="sm" className="w-full bg-primary hover:bg-primary/90 py-3">
                   Ver curso
                 </Button>
               </div>
@@ -86,7 +86,7 @@ export function FeaturedCoursesSection() {
                 <h3 className="font-serif text-lg font-semibold mb-4 text-balance">
                   Narrativas no lineales: de Godard a Nolan
                 </h3>
-                <Button size="sm" className="w-full bg-primary hover:bg-primary/90">
+                <Button size="sm" className="w-full bg-primary hover:bg-primary/90 py-3">
                   Ver curso
                 </Button>
               </div>
